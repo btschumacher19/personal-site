@@ -7,8 +7,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <!-- JavaScript Bundle with Popper -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" -->
@@ -88,16 +92,25 @@
             <span id="dot-holder">
 
                 <h1 id="about-me" class="arrow" style="color: #ece927; z-index: 99; position: relative">
-
                     -
                 </h1>
 
                 <div id="left-right">
-                    <img src="images/NUK.JPG" alt=":)">
-                    <h2>
+                    <p>
                         I am a recent Air Force Veteran who developed a love of solving real world problems. So
                         naturally, coding became my main hobby. My other hobbies center around Real Estate and coffee.
-                    </h2>
+                    </p>
+                    <div style=" width: 140px;
+                    height: 140px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    display:inline-block;
+                    vertical-align:middle;
+                    border: solid 3px white;
+                  ">
+                    <img style="width: 100%; height: 100%; object-fit: cover; " src="images/IMG_1682.JPG" alt=":)">
+                    </div>
+
                 </div>
 
             </span>
@@ -105,9 +118,9 @@
         <div id="second-page" style="z-index: 1; pointer-events: none">
             <div id="content" style="pointer-events: auto">
                 <div id="p2-projects">
-                    <h1>Some of my favorite projects...</h1>
+                    <!-- <h1>Some of my favorite projects...</h1> -->
                     <div class="project">
-                        <ul class="nav nav-tabs d-flex" id="myTab" role="tablist">
+                        <ul style="background-image: linear-gradient(123deg, #e6b67c 0%, #ff8282 100%); border-top-left-radius: 4px; border-top-right-radius: 4px;" class="nav nav-tabs d-flex" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="demo-tab" data-bs-toggle="tab"
                                     data-bs-target="#demo1" type="button" role="tab" aria-controls="home"
@@ -119,25 +132,39 @@
                                     aria-selected="false">Details</button>
                             </li>
                             <li style="margin: auto; margin-right: 1%;">
-                                <h2 style="">Rock Paper Scissors</h2>
+                                <h1 style="
+                                font-family: 'Roboto Condensed', sans-serif; color: white; font-size: 25px; margin: 0;"> Rock Paper Scissors</h1>
                             </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="demo1" role="tabpanel" aria-labelledby="home-tab">
-                                <span style="display: flex; justify-content: space-evenly; flex-direction: row; width: 100%;">
-                                    <!-- <div> -->
+                                <span class ="" style="display: flex; justify-content: center; flex-direction: row; width: 100%;">
                     
-                                    <img style="margin: 3%;" src="https://raw.githubusercontent.com/btschumacher19/swift-vision-rock-paper-scissors/main/demo/demo.gif"
+                                    <img style="margin: 3%; margin-right: 0;" src="https://raw.githubusercontent.com/btschumacher19/swift-vision-rock-paper-scissors/main/demo/demo.gif"
                                         alt=":)">
-                                    <div style="text-align: center; margin: auto; margin-right: 3%;"><p> A Rock Paper Scissors app, played against your device with computer vision.</p></div>
-                                
-                                    <!-- </div> -->
+                                        
+                                    <div style="text-align: center; margin: auto; margin-right: 3%; margin-left: 3%; font-family: 'Cabin', sans-serif; color: #392559; background-color: white; border-radius: 6px; border: solid 2px grey;">
+                                        <h2 style="padding: 15px;"> A Rock Paper Scissors app played against your device, using computer vision.</h2>
+                                        <div style="display: flex; align-items: center; border-top: solid 2px grey; width: 100%; padding: 10px; background-color: rgba(128, 128, 128, 0.221);">
+                                        <i style="font-size: 35px;" class="bi bi-phone"></i>
+                                        <div style="width: 35px; height: 35px; margin-left: auto;" >
+                                            <a class="n02" href="https://github.com/btschumacher19/swift-vision-rock-paper-scissors">
+                                                <svg style="fill: #392559" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <title>GitHub</title>
+                                                    <path
+                                                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    </div>
                                 
                             </span>
                             </div>
                             <div class="tab-pane fade" id="details1" role="tabpanel" aria-labelledby="profile-tab">
-
-                                    Hello?
+                                <div style="text-align: center; margin: auto;">
+                                A mobile application 
+                                </div>
                                 
                             </div>
                         </div>
