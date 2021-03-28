@@ -717,13 +717,10 @@ p .li {
     color: #392559;
 }
 
-.nav-tabs .nav-link.disabled {
-    color: wheat;
-}
-
 .nav-tabs .nav-link:hover {
-
-    background-color: #39255976;
+    /* border-color: #ece927; */
+    border-bottom: #dee2e6;
+    background-color: #392559a1;
     color: white;
     isolation: isolate
 }
@@ -732,10 +729,8 @@ p .li {
     color: #392559;
     background-color: #fff;
     border-color: #dee2e6 #dee2e6 #fff;
+    border-bottom: solid 1px white;
 }
-
-/* .nav-tabs .nav-item.show .nav-link,.nav-tabs .nav-link.active{ border: solid 1px #392559; color:#495057; border-bottom-color: white;} */
-/* .nav-tabs{border-bottom:1px solid #392559;} */
 
 #skew {
     position: absolute;
