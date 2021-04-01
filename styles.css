@@ -601,15 +601,18 @@ p .li {
 
 #dot-holder div {
     margin: auto;
+    background: #392559;
+    box-shadow:  8px 8px 16px #2c1d45,
+             -8px -8px 16px #462d6d;
 }
 
 #left-right {
     padding: 12px;
-    background-color: #392559;
+    /* background-color: #392559; */
     /* background-image: linear-gradient(90deg, #ff8193 0%, #e6b67c 100%); */
     background-position: 0% 0%;
     background-size: cover;
-    border-radius: 6px;
+    border-radius: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* width: 100%; */
@@ -617,7 +620,7 @@ p .li {
     width: 400px;
     transform: scale(1.1);
     visibility: hidden;
-    border: solid 1px white;
+    /* border: solid 1px white; */
 }
 
 #left-right p {
@@ -644,10 +647,11 @@ p .li {
     /* transition: .3s ease; */
     z-index: 98;
     transform: scale(1.1);
-    opacity: 100;
+    opacity: 100%;
     background-image: none;
-    background-image: linear-gradient(0deg, white 60%, rgba(255, 255, 255, 0) 70%);
+    /* background-image: linear-gradient(0deg, white 60%, rgba(255, 255, 255, 0) 70%); */
     /* background-color: white; */
+    background-color: #392559;
     background-position: 0% 0%;
     background-repeat: repeat;
     background-size: cover;
@@ -673,7 +677,7 @@ p .li {
 #content {
     margin-top: 180px;
     background-color: #FFFFFF;
-    width: 88%;
+    width: 95%;
     height: 100%;
     bottom: 0%;
     /* z-index: 97; */
@@ -689,28 +693,36 @@ p .li {
 }
 
 #p2-projects {
-    margin-top: 16px;
+    
     height: 100%;
-    width: 100%;
+    width: 85%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    /* background-color: #d6d6d6; */
 }
 
 .project {
     margin: 20px;
     transform: skewY(-3deg);
-    /* width: 100%; */
     height: 100%;
+    text-align: center;
+    border-bottom: solid 2px #ff8282;
     /* height: 50%; */
     /* border: solid 2px black; */
     box-shadow: 0rem 1.125rem 5.5rem 0rem rgba(191, 191, 191, 0.451);
+    /* background-color: #d6d6d6; */
+    border-radius: 12px;
+    /* box-shadow: 15px 15px 30px #bababa, -15px -15px 30px #f2f2f2; */
 }
 
 .nav-link {
     font-family: 'Cabin', sans-serif;
-    color: white
+    color: white;
+    
 }
 
 .nav-tabs .nav-link.active {
